@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Serus</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.jpg" width="150" height="75" class="d-inline-block align-top" alt="Html, Css, Javascript" class="rounded">
+            </a>
+            <span class="navbar-brand mb-0 h1">Formulár: Vianoce 2020</span>
+        </nav>
+        
+        <div class="container">
+
+            <h1 class="display-4 pt-2">Ktorý ruksak je najkrajší?</h1>
+
+            <form action="http://iolab.sk/form2mail/form2mail.php" method="post" enctype="multipart/form-data" id="form">
+
+                <!------------------------------------------------------------
+                    Povinna premenna, bez nej nebude preposielanie fungovat korektne
+                    apikey => API kluc  - povinne
+                ------------------------------------------------------------>
+                
+                <input type="hidden" name="apikey" value="9656e0968f010ae68fc0dde21ad366b4">
+
+                <!--    ----------------------------------------------------------
+                Nastavenia emailu:
+                from          => od koho
+                to            => komu - emailova adresa - povinne
+                sender        => komu - meno odosielatela - nepovinne
+                subject       => predmet  - povinne
+                redirectOk    => presmerovat po uspesnom odoslani - povinne
+                redirectFalse => presmerovat po neuspesnom odoslani  - povinne
+                ----------------------------------------------------------    -->
+
+                <input type="hidden" name="from" value="xsalyp@stuba.sk">
+                <input type="hidden" name="sender" value="Patrik Saly">
+                <input type="hidden" name="to" value="saly.pato@gmail.com">
+                <input type="hidden" name="subject" value="Darcek">
+                <input type="hidden" name="redirectOk" value="http://147.175.121.202/~xsalyp/uloha/DarcekForm/dakujem.html">
+                <input type="hidden" name="redirectFalse" value="http://147.175.121.202/~xsalyp/uloha/zadanie3/">
+
+                <!--    ----------------------------------------------------------
+                viditelne polia formulara na samotnej stranke
+                ----------------------------------------------------------    -->
+
+                <div class="row justify-content-center">
+                    <div class="d-flex justify-content-around flex-wrap">
+                        <div class="card">
+                            <a href="https://data.sashe.sk/photos/2017/03/30/83757/c/c-R7999390_83757_20170330_29058.jpg"><img class="card-img-top img" src="https://data.sashe.sk/photos/2017/03/30/83757/c/c-R7999390_83757_20170330_29058.jpg" alt="Batoh1"></a> 
+                            <div class="card-body">
+                                <h5 class="card-title">Číslo: 1</h5>
+                                <p> Výrobca: <span class="vyrobca"> LejDiana</span></p>
+                                <p>Názov: <span class="nazov lead"> Batoh no. 76</span></p>
+                                <a href="https://www.sashe.sk/LejDiana/detail/batoh-no.-76" class="card-link">Sashe</a>
+                            </div>
+                        </div> 
+
+                        <div class="card">
+                            <a href="https://data.sashe.sk/photos/2019/10/21/230/c/c-R11200584_230_20191021_46827.jpg"><img class="card-img-top img" src="https://data.sashe.sk/photos/2019/10/21/230/c/c-R11200584_230_20191021_46827.jpg" alt="Batoh2"></a> 
+                            <div class="card-body">
+                                <h5 class="card-title">Číslo: 2</h5>
+                                <p> Výrobca: <span class="vyrobca"> Ammyla</span></p>
+                                <p>Názov: <span class="nazov lead"> Textilno-kožený batoh Hugo</span></p>
+                                <a href="https://www.sashe.sk/Ammyla/detail/textilno-kozeny-batoh-hugo-ceresne" class="card-link">Sashe</a>
+                            </div>
+                        </div> 
+
+                        <div class="card">
+                            <a href="https://data.sashe.sk/photos/2019/08/16/83757/c/c-R10983259_83757_20190816_67583.jpg"><img class="card-img-top img" src="https://data.sashe.sk/photos/2019/08/16/83757/c/c-R10983259_83757_20190816_67583.jpg" alt="Batoh3"></a> 
+                            <div class="card-body">
+                                <h5 class="card-title">Číslo: 3</h5>
+                                <p> Výrobca: <span class="vyrobca"> LejDiana</span></p>
+                                <p>Názov: <span class="nazov lead"> Batoh no.267</span></p>
+                                <a href="https://www.sashe.sk/LejDiana/detail/batoh-no.267" class="card-link">Sashe</a>
+                            </div>
+                        </div> 
+                   
+                        <div class="card">
+                            <a href="https://static.sashe.sk/data/2016/05/09/photos/230/c/c-N6743395_230_20160509_22452.jpg"><img class="card-img-top img" src="https://static.sashe.sk/data/2016/05/09/photos/230/c/c-N6743395_230_20160509_22452.jpg" alt="Batoh4"></a> 
+                            <div class="card-body">
+                                <h5 class="card-title">Číslo: 4</h5>
+                                <p> Výrobca: <span class="vyrobca"> Ammyla</span></p>
+                                <p>Názov: <span class="nazov lead"> Batoh (béžovobodkovaný)</span></p>
+                                <a href="https://www.sashe.sk/Ammyla/detail/batoh-bezovobodkovany" class="card-link">Sashe</a>
+                            </div>
+                        </div> 
+
+                        <div class="card">
+                            <a href="https://data.sashe.sk/photos/2020/03/10/83757/c/c-R11670603_83757_20200310_79951.jpg"><img class="card-img-top img" src="https://data.sashe.sk/photos/2020/03/10/83757/c/c-R11670603_83757_20200310_79951.jpg" alt="Batoh5"></a> 
+                            <div class="card-body">
+                                <h5 class="card-title">Číslo: 5</h5>
+                                <p> Výrobca: <span class="vyrobca"> LejDiana</span></p>
+                                <p>Názov: <span class="nazov lead"> Batoh no.333</span></p>
+                                <a href="https://www.sashe.sk/LejDiana/detail/batoh-no.333" class="card-link">Sashe</a>
+                            </div>
+                        </div> 
+
+                        <div class="card">
+                            <a href="https://static.sashe.sk/data/2016/06/20/photos/83757/c/c-N6887804_83757_20160620_71847.jpg"><img class="card-img-top img" src="https://static.sashe.sk/data/2016/06/20/photos/83757/c/c-N6887804_83757_20160620_71847.jpg" alt="Batoh6"></a> 
+                            <div class="card-body">
+                                <h5 class="card-title">Číslo: 6</h5>
+                                <p> Výrobca: <span class="vyrobca"> LejDiana</span></p>
+                                <p>Názov: <span class="nazov lead"> Batoh No.34</span></p>
+                                <a href="https://www.sashe.sk/LejDiana/detail/batoh-no.34-1" class="card-link">Sashe</a>
+                            </div>
+                        </div> 
+
+                        <div class="card">
+                            <a href="https://data.sashe.sk/photos/2020/04/24/83757/c/c-R11841211_83757_20200424_42390.jpg"><img class="card-img-top img" src="https://data.sashe.sk/photos/2020/04/24/83757/c/c-R11841211_83757_20200424_42390.jpg" alt="Batoh7"></a> 
+                            <div class="card-body">
+                                <h5 class="card-title">Číslo: 7</h5>
+                                <p> Výrobca: <span class="vyrobca"> LejDiana</span></p>
+                                <p>Názov: <span class="nazov lead"> Batoh no.339 + rúško</span></p>
+                                <a href="https://www.sashe.sk/LejDiana/detail/batoh-no.339-rusko" class="card-link">Sashe</a>
+                            </div>
+                        </div> 
+
+                        <div class="card">
+                            <a href="https://data.sashe.sk/photos/2019/12/06/83757/c/c-R11387678_83757_20191206_35819.jpg"><img class="card-img-top img" src="https://data.sashe.sk/photos/2019/12/06/83757/c/c-R11387678_83757_20191206_35819.jpg" alt="Batoh8"></a> 
+                            <div class="card-body">
+                                <h5 class="card-title">Číslo: 8</h5>
+                                <p> Výrobca: <span class="vyrobca"> LejDiana</span></p>
+                                <p>Názov: <span class="nazov lead"> Batoh no.310</span></p>
+                                <a href="https://www.sashe.sk/LejDiana/detail/batoh-no.310" class="card-link">Sashe</a>
+                            </div>
+                        </div> 
+
+                        <div class="card">
+                            <a href="https://data.sashe.sk/photos/2019/11/05/83757/c/c-R11255134_83757_20191105_90463.jpg"><img class="card-img-top img" src="https://data.sashe.sk/photos/2019/11/05/83757/c/c-R11255134_83757_20191105_90463.jpg" alt="Batoh9"></a> 
+                            <div class="card-body">
+                                <h5 class="card-title">Číslo: 9</h5>
+                                <p> Výrobca: <span class="vyrobca"> LejDiana</span></p>
+                                <p>Názov: <span class="nazov lead"> Batoh no.284</span></p>
+                                <a href="https://www.sashe.sk/LejDiana/detail/batoh-no.284" class="card-link">Sashe</a>
+                            </div>
+                        </div> 
+
+                        <div class="card">
+                            <a href="https://data.sashe.sk/photos/2018/05/24/83757/c/c-R9550688_83757_20180524_68342.jpg"><img class="card-img-top img" src="https://data.sashe.sk/photos/2018/05/24/83757/c/c-R9550688_83757_20180524_68342.jpg" alt="Batoh10"></a> 
+                            <div class="card-body">
+                                <h5 class="card-title">Číslo: 10</h5>
+                                <p> Výrobca: <span class="vyrobca"> LejDiana</span></p>
+                                <p>Názov: <span class="nazov lead"> Batoh no.167</span></p>
+                                <a href="https://www.sashe.sk/LejDiana/detail/batoh-no.167" class="card-link">Sashe</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <label for="Meno">Krstné meno: </label>
+                <input type="text" class="form-control" name="Meno" id="name" placeholder="Jožko" required>
+
+                <label for="Batoh">Čísla batohov, ktoré sa ti páčia: </label>
+                <input type="text" class="form-control" name="Batoh" id="cisla" placeholder="1,5..." required>
+                <button class="btn btn-lg" type="button" onclick="submitForm()" value="odoslat">Potvrdiť formulár</button>
+
+            </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

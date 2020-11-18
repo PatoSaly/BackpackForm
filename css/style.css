@@ -1,0 +1,65 @@
+body {
+    background: rgb(255,245,245);
+    background: linear-gradient(90deg, rgba(255,245,245,1) 0%, rgba(255,247,247,1) 84%, rgba(255,218,166,1) 100%);
+    color: #1C1C1C; 
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.navbar {
+    background: #FEFEFE;
+    border-bottom: 1px solid #1C1C1C;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 350px;
+    margin: 30px 10px;
+}
+
+.card:hover {
+    position: relative;
+    top: -3px;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(102,102,102,1);
+    -moz-box-shadow: 0px 2px 8px 0px rgba(102,102,102,1);
+    box-shadow: 0px 2px 8px 0px rgba(102,102,102,1);
+}
+
+.img{
+    width: 348px;
+    height: 348px;
+    object-fit: cover;
+}
+
+label {
+    margin-top: 30px;
+}
+
+.btn-lg {
+   padding: .75em 1em;
+   min-width: 30%;
+   font-size: .9em;
+   font-weight: 700;
+   text-transform: uppercase;
+   border: none;
+   border-radius: 10em;
+   letter-spacing: 1px;
+   background: #ff8923;
+   color: #fff;
+   margin: 30px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.btn-lg:hover {
+   text-decoration: none;
+   color: #fff;
+   background: #FF5F00;
+   transition: .5s;
+}
+
